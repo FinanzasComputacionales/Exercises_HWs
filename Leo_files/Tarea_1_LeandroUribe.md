@@ -12,3 +12,8 @@ Codigo de prueba:
 def saludo(nombre):
     return f"hola {nombre}!"
 ```
+
+Prueba de admonition:
+
+> [!TIP]
+> esto se supone deberia ser una cajita de tip
