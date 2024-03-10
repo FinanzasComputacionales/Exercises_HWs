@@ -55,6 +55,10 @@ $$
 \end{aligned}
 $$
 
+Se llevaron a cabo un par de ejemplos donde se demostraba esto. Finalmente se habló sobre las fronteras, definiendo esto como el siguiente conjunto:
+
+$$ \partial E := \\{ x\in\mathbb{R}^n \\;\\; | \\;\\; \forall r>0, \\; B_r(x) \cap E \ne \emptyset \text{ y} B_r(x) \cap E^c \ne \emptyset \\} $$
+
 
 ## Límites de funciones
 
