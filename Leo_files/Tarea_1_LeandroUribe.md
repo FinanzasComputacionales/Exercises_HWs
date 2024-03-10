@@ -7,16 +7,27 @@ Para esta primera entrega, se pretende brindar un resumen de lo que contiene el 
 
 En este capítulo, se introduce el espacio euclidiano $\mathbb{R}^n$, y elementos como axiomas, operaciones como productos internos y operaciones vectoriales básicas. Se define la base estándar de $\mathbb{R}^n$ y se explica la representación de vectores como combinaciones lineales.
 
-Con la introducción de la base estándar de $\mathbb{R}^n$ dada como $\mathbb{E}_n = \{ e_1, e_2, \ldots, e_n \}$, la definición de combinación lineal para un vector genérico $x$ se da como:
+Con la introducción de la base estándar de $\mathbb{R}^n$ dada como $\mathbb{E}_n = \left\{ e_1, e_2, \ldots, e_n \right\}$, la definición de combinación lineal para un vector genérico $x$ se da como:
 
 $$ x = \sum_{j=1}^n x_j e_j = \sum_{j=1}^n x \cdot e_j e_j $$
 
-Se explica luego el concepto de vectores paralelos y ortogonales; dado dos vectores $x, y \in \mathbb{R}^n$, si $x,y$ son paralelos se denotará como $x||y$ y se cumplirá que existe un $t\in\mathbb{R}$ tal que $x=ty$. Por otro lado, si $x,y$ son ortogonales se denotará como $x\perp y$ y se cumplirá que $x\cdot y = 0$.
+Se explica luego el concepto de vectores paralelos y ortogonales; dado dos vectores $x, y \in \mathbb{R}^n$, si $x,y$ son paralelos se denotará como $x\|y$ y se cumplirá que existe un $t\in\mathbb{R}$ tal que $x=ty$. Por otro lado, si $x,y$ son ortogonales se denotará como $x\perp y$ y se cumplirá que $x\cdot y = 0$.
 
 > [!IMPORTANT]
 > Se debe tener la consideración de que $x,y$ sean vectores no nulos.
 
 Se define además la norma euclideana de $x$ como:
+
+$$ \| x \| = \left( \sum_{k=1}^n x_k^2 \right)^{\frac12} $$
+
+Teniendo además que $\| x \|^2 = x\cdot x$.
+
+Posteriormente, se introduce la desigualdad de Cauchy dada por:
+
+$$ | x\cdot y | \leq \| x \| \| y \| $$
+
+Y se lleva a cabo su demostración junto con algunas propiedades básicas de la norma Euclideana y sus demostraciones mediante dicha desigualdad.
+
 
 ## Topología de $\mathbb{R}^n$
 
