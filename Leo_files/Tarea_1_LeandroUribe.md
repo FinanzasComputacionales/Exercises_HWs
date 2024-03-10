@@ -37,7 +37,7 @@ La definición para bolas abiertas y cerradas está alrededor de conjuntos de pu
 
 **(i).** $\forall r > 0$, la bola **abierta** centrada en **a** y de radio $r$ es el conjunto de puntos:
 
-$$ B_r(a) := { x\in\mathbb{R}^n | \; ||x-a|| < r } $$
+$$ B_r(a) := \{ x\in\mathbb{R}^n \quad | \quad ||x-a|| < r \} $$
 
 
 ## Límites de funciones
