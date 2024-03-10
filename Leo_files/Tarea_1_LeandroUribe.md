@@ -11,7 +11,7 @@ Con la introducción de la base estándar de $\mathbb{R}^n$ dada como $\mathbb{E
 
 $$ x = \sum_{j=1}^n x_j e_j = \sum_{j=1}^n x \cdot e_j e_j $$
 
-Se explica luego el concepto de vectores paralelos y ortogonales; dado dos vectores $x, y \in \mathbb{R}^n$, si $x,y$ son paralelos se denotará como $x\|y$ y se cumplirá que existe un $t\in\mathbb{R}$ tal que $x=ty$. Por otro lado, si $x,y$ son ortogonales se denotará como $x\perp y$ y se cumplirá que $x\cdot y = 0$.
+Se explica luego el concepto de vectores paralelos y ortogonales; dado dos vectores $x, y \in \mathbb{R}^n$, si $x,y$ son paralelos se denotará como $x \\| y$ y se cumplirá que existe un $t\in\mathbb{R}$ tal que $x=ty$. Por otro lado, si $x,y$ son ortogonales se denotará como $x\perp y$ y se cumplirá que $x\cdot y = 0$.
 
 > [!IMPORTANT]
 > Se debe tener la consideración de que $x,y$ sean vectores no nulos.
@@ -39,12 +39,21 @@ La definición para bolas abiertas y cerradas se da de la siguiente manera:
 
 $$ B_r(a) := \\{ x\in\mathbb{R}^n \\; | \\; ||x-a|| < r \\} $$
 
-**(ii).** $\forall r \geq 0$, la bola **cerrada**, centrada en $a& de radio $r$ es el conjunto de puntos:
+**(ii).** $\forall r \geq 0$, la bola **cerrada**, centrada en $a$ de radio $r$ es el conjunto de puntos:
 
-$$ \overline{B}_r := \\{ x\in\mathbb{R}^n \\; | \\; ||x-a||\geq r \\} $$
+$$ \overline{B}_r(a) := \\{ x\in\mathbb{R}^n \\; | \\; ||x-a||\leq r \\} $$
 
 > [!NOTE]
 > Se hace énfasis en que, cuando $n=1$, las bolas se representan como intervalos abiertos $(a-r, a+r)$ para las bolas abiertas y como intervalos cerrados $[a-r, a+r]$ para bolas cerradas. En $n=2$, las bolas se representan como circunferencias de línea punteada para bolas abiertas y como circunferencias de línea sólida para bolas cerradas.
+
+Se determina además la unión e intersección de subconjuntos abiertos $\\{ V_{\alpha} \\}_{\alpha\in A}$ y cerrados $\\{ E_{\alpha} \\}_{\alpha\in A}$ de $\mathbb{R}^n$ donde $A$ es cualquier conjunto de índices. Se tiene entonces que:
+
+$$
+\begin{aligned}
+    (i). \bigcup\limits_{\alpha in A} V_{\alpha}\text{ es abierto}; \qquad& (iii). \bigcap\limits{\alpha\in A} E_{\alpha}\text{ es cerrado};\\
+    1 & 2
+\emd{aligned}
+$$
 
 
 ## Límites de funciones
