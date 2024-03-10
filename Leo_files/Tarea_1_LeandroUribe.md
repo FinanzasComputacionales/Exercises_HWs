@@ -50,8 +50,8 @@ Se determina además la unión e intersección de subconjuntos abiertos $\\{ V_{
 
 $$
 \begin{aligned}
-    (i). \bigcup\limits_{\alpha in A} V_{\alpha}\text{ es abierto}; \qquad& (iii). \bigcap\limits{\alpha\in A} E_{\alpha}\text{ es cerrado};\\
-    1 & 2
+    (i). \bigcup_{\alpha\in A} V_{\alpha}\text{ es abierto}; \qquad& (iii). \bigcap_{\alpha\in A} E_{\alpha}\text{ es cerrado};\\
+    (ii). \bigcap_{k=1}^p V_{k}\text{ es abierto}; \qquad& (iv). \bigcup_{k=1}^p E_{k}\text{ es cerrado};\\
 \end{aligned}
 $$
 
