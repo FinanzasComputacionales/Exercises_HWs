@@ -33,11 +33,18 @@ Y se lleva a cabo su demostración junto con algunas propiedades básicas de la 
 
 En esta parte del capítulo, se explican conceptos de conjuntos abiertos y cerrados, y presenta propiedades básicas de estos conjuntos en $\mathbb{R}^n$. Incluye definiciones de bolas abiertas y cerradas, y teoremas relacionados con la topología.
 
-La definición para bolas abiertas y cerradas está alrededor de conjuntos de puntos que cumplen lo siguiente:
+La definición para bolas abiertas y cerradas se da de la siguiente manera:
 
 **(i).** $\forall r > 0$, la bola **abierta** centrada en **a** y de radio $r$ es el conjunto de puntos:
 
 $$ B_r(a) := \\{ x\in\mathbb{R}^n \\; | \\; ||x-a|| < r \\} $$
+
+**(ii).** $\forall r \geq 0$, la bola **cerrada**, centrada en $a& de radio $r$ es el conjunto de puntos:
+
+$$ \overline{B}_r := \\{ x\in\mathbb{R}^n \\; | \\; ||x-a||\geq r \\} $$
+
+> [!NOTE]
+> Se hace énfasis en que, cuando $n=1$, las bolas se representan como intervalos abiertos $(a-r, a+r)$ para las bolas abiertas y como intervalos cerrados $[a-r, a+r]$ para bolas cerradas. En $n=2$, las bolas se representan como circunferencias de línea punteada para bolas abiertas y como circunferencias de línea sólida para bolas cerradas.
 
 
 ## Límites de funciones
