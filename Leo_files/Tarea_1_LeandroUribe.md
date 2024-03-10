@@ -7,7 +7,7 @@ Para esta primera entrega, se pretende brindar un resumen de lo que contiene el 
 
 En este capítulo, se introduce el espacio euclidiano $\mathbb{R}^n$, y elementos como axiomas, operaciones como productos internos y operaciones vectoriales básicas. Se define la base estándar de $\mathbb{R}^n$ y se explica la representación de vectores como combinaciones lineales.
 
-Con la introducción de la base estándar de $\mathbb{R}^n$ dada como $\mathbb{E}_n = \left\{ e_1, e_2, \ldots, e_n \right\}$, la definición de combinación lineal para un vector genérico $x$ se da como:
+Con la introducción de la base estándar de $\mathbb{R}^n$ dada como $\mathbb{E}_n = \{ e_1, e_2, \ldots, e_n \}$, la definición de combinación lineal para un vector genérico $x$ se da como:
 
 $$ x = \sum_{j=1}^n x_j e_j = \sum_{j=1}^n x \cdot e_j e_j $$
 
