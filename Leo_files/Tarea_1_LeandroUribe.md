@@ -52,7 +52,7 @@ $$
 \begin{aligned}
     (i). \bigcup\limits_{\alpha in A} V_{\alpha}\text{ es abierto}; \qquad& (iii). \bigcap\limits{\alpha\in A} E_{\alpha}\text{ es cerrado};\\
     1 & 2
-\emd{aligned}
+\end{aligned}
 $$
 
 
