@@ -62,4 +62,22 @@ $$ \partial E := \\{ x\in\mathbb{R}^n \\;\\; | \\;\\; \forall r>0, \\; B_r(x) \c
 
 ## Límites de funciones
 
-Aunque no se detalla en el contexto proporcionado, este apartado probablemente aborda la aproximación de funciones en Rn y la definición formal de límites en este espacio.
+Este apartado del capítulo comenzó definiendo el concepto de función vectorial como una función $f$ de la forma $f \\;\\; : \\;\\; A \rightarrow \mathbb{R}^m$, donde $A\subset\mathbb{R}^n$ y, dado que $f(x)\in\mathbb{R}^m$ para cada $x\in A$ entonces habrán $m$ funciones $f_j$ llamadas funciones componentes de $f$ tales que:
+
+$$ f(x) = ( f_1(x), f_2(x), ..., f_m(x) ) \quad \text{para cada } x\in A $$
+
+Definiendo luego operaciones como producto por escalar, suma de dos funciones vectoriales $f$ y $g$ y su producto punto.
+
+Se definió además la continuidad de las funciones teniendo en cuenta subconjuntos abiertos y cerrados. Se explicó que, dado $n,m\in\mathbb{N}$ y $f \\;\\; : \\;\\; \mathbb{R}^n \rightarrow \mathbb{R}^m$, se tienen las siguientes expresiones equivalentes entre sí:
+
+* $f$ es contínua en $\mathbb{R}^n$
+* $f^{-1}(V)$ es abierta en $\mathbb{R}^n$ para cada subconjunto abierto $V$ de $\mathbb{R}^m$
+* $f^{-1}(E)$ es cerrada en $\mathbb{R}^n$ para cada subconjunto cerrado $E$ de $\mathbb{R}^m$
+
+Luego, se introdujo el **teorema de Weierstrass en lo compacto**, en donde se tiene que, dado $n,m\in\mathbb{N}$, si $H$ es compacto en $\mathbb{R}^n$ y $f \\;\\; : \\;\\; H \rightarrow \mathbb{R}^m$ es contínuo en $H$, entonces $f(H)$ es compacto en $\mathbb{R}^m$.
+
+Esto, para mostrar posteriormente la **Generalización del teorema de Weierstrass**, en donde asumiendo que $H$ sea un subconjunto no vacío de $\mathbb{R}^n$ y $f \\;\\; : \\;\\; H \rightarrow \mathbb{R}$ se tendrá que si $H$ es compacto y $f$ es contínuo en $H$, entonces se cumplirá que:
+
+$$ M := \text{sup } \\{ f(X) \\;\\; | \\;\\; x\in H \\} \quad \text{y} \quad m := \text{inf } \\{ f(X) \\;\\; | \\;\\; x\in H \\} $$
+
+Son números reales finitos. Además, se tendrá que existen puntos $x_M, x_m \in H$ tales que $M=f(x_M)$ y $m=f(x_m)$.
