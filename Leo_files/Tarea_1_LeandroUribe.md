@@ -37,11 +37,11 @@ La definición para bolas abiertas y cerradas se da de la siguiente manera:
 
 **(i).** $\forall r > 0$, la bola **abierta** centrada en **a** y de radio $r$ es el conjunto de puntos:
 
-$$ B_r(a) := \\{ x\in\mathbb{R}^n \\; | \\; ||x-a|| < r \\} $$
+$$ B_r(a) := \\{ x\in\mathbb{R}^n \\;\\; | \\;\\; ||x-a|| < r \\} $$
 
 **(ii).** $\forall r \geq 0$, la bola **cerrada**, centrada en $a$ de radio $r$ es el conjunto de puntos:
 
-$$ \overline{B}_r(a) := \\{ x\in\mathbb{R}^n \\; | \\; ||x-a||\leq r \\} $$
+$$ \overline{B}_r(a) := \\{ x\in\mathbb{R}^n \\;\\; | \\;\\; ||x-a||\leq r \\} $$
 
 > [!NOTE]
 > Se hace énfasis en que, cuando $n=1$, las bolas se representan como intervalos abiertos $(a-r, a+r)$ para las bolas abiertas y como intervalos cerrados $[a-r, a+r]$ para bolas cerradas. En $n=2$, las bolas se representan como circunferencias de línea punteada para bolas abiertas y como circunferencias de línea sólida para bolas cerradas.
@@ -57,7 +57,7 @@ $$
 
 Se llevaron a cabo un par de ejemplos donde se demostraba esto. Finalmente se habló sobre las fronteras, definiendo esto como el siguiente conjunto:
 
-$$ \partial E := \\{ x\in\mathbb{R}^n \\;\\; | \\;\\; \forall r>0, \\; B_r(x) \cap E \ne \emptyset \text{ y} B_r(x) \cap E^c \ne \emptyset \\} $$
+$$ \partial E := \\{ x\in\mathbb{R}^n \\;\\; | \\;\\; \forall r>0, \\; B_r(x) \cap E \ne \emptyset \text{ y } B_r(x) \cap E^c \ne \emptyset \\} $$
 
 
 ## Límites de funciones
