@@ -46,12 +46,12 @@ $$ \overline{B}_r(a) := \\{ x\in\mathbb{R}^n \\; | \\; ||x-a||\leq r \\} $$
 > [!NOTE]
 > Se hace énfasis en que, cuando $n=1$, las bolas se representan como intervalos abiertos $(a-r, a+r)$ para las bolas abiertas y como intervalos cerrados $[a-r, a+r]$ para bolas cerradas. En $n=2$, las bolas se representan como circunferencias de línea punteada para bolas abiertas y como circunferencias de línea sólida para bolas cerradas.
 
-Se determina además la unión e intersección de subconjuntos abiertos $\\{ V_{\alpha} \\}_{\alpha\in A}$ y cerrados $\\{ E_{\alpha} \\}_{\alpha\in A}$ de $\mathbb{R}^n$ donde $A$ es cualquier conjunto de índices. Se tiene entonces que:
+Se determina además la unión e intersección de subconjuntos abiertos $\\{V_{\alpha}\\}_{\alpha\in A}$ y cerrados $\\{E_{\alpha}\\}_{\alpha\in A}$ de $\mathbb{R}^n$ donde $A$ es cualquier conjunto de índices. Se tiene entonces que:
 
 $$
 \begin{aligned}
-    (i). \bigcup_{\alpha\in A} V_{\alpha}\text{ es abierto}; \qquad& (iii). \bigcap_{\alpha\in A} E_{\alpha}\text{ es cerrado};\\
-    (ii). \bigcap_{k=1}^p V_{k}\text{ es abierto}; \qquad& (iv). \bigcup_{k=1}^p E_{k}\text{ es cerrado};\\
+    (i).& \bigcup_{\alpha\in A} V_{\alpha}\text{ es abierto}; \qquad& (iii).& \bigcap_{\alpha\in A} E_{\alpha}\text{ es cerrado};\\
+    (ii).& \bigcap_{k=1}^p V_{k}\text{ es abierto}; \qquad& (iv).& \bigcup_{k=1}^p E_{k}\text{ es cerrado};\\
 \end{aligned}
 $$
 
