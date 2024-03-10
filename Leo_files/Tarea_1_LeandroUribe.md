@@ -78,6 +78,6 @@ Luego, se introdujo el **teorema de Weierstrass en lo compacto**, en donde se ti
 
 Esto, para mostrar posteriormente la **Generalización del teorema de Weierstrass**, en donde asumiendo que $H$ sea un subconjunto no vacío de $\mathbb{R}^n$ y $f \\; : \\; H \rightarrow \mathbb{R}$ se tendrá que si $H$ es compacto y $f$ es contínuo en $H$, entonces se cumplirá que:
 
-$$ M := \text{sup } \\{ f(X) \\;\\; | \\;\\; x\in H \\} \quad \text{y} \quad m := \text{inf } \\{ f(X) \\;\\; | \\;\\; x\in H \\} $$
+$$ M := \text{sup } \\{ f(x) \\;\\; | \\;\\; x\in H \\} \quad \text{y} \quad m := \text{inf } \\{ f(x) \\;\\; | \\;\\; x\in H \\} $$
 
 Son números reales finitos. Además, se tendrá que existen puntos $x_M, x_m \in H$ tales que $M=f(x_M)$ y $m=f(x_m)$.
