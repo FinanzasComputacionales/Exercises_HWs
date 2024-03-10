@@ -24,7 +24,7 @@ Teniendo además que $|| x ||^2 = x\cdot x$.
 
 Posteriormente, se introduce la desigualdad de Cauchy dada por:
 
-$$ | x\cdot y | \leq || x || || y || $$
+$$ | x\cdot y | \leq || x || \\; || y || $$
 
 Y se lleva a cabo su demostración junto con algunas propiedades básicas de la norma Euclideana y sus demostraciones mediante dicha desigualdad.
 
@@ -37,7 +37,7 @@ La definición para bolas abiertas y cerradas está alrededor de conjuntos de pu
 
 **(i).** $\forall r > 0$, la bola **abierta** centrada en **a** y de radio $r$ es el conjunto de puntos:
 
-$$ B_r(a) := \\{ x\in\mathbb{R}^n \quad | \quad ||x-a|| < r \\} $$
+$$ B_r(a) := \\{ x\in\mathbb{R}^n \\; | \\; ||x-a|| < r \\} $$
 
 
 ## Límites de funciones
