@@ -18,13 +18,13 @@ Se explica luego el concepto de vectores paralelos y ortogonales; dado dos vecto
 
 Se define además la norma euclideana de $x$ como:
 
-$$ \| x \| = \left( \sum_{k=1}^n x_k^2 \right)^{\frac12} $$
+$$ || x || = \left( \sum_{k=1}^n x_k^2 \right)^{\frac12} $$
 
-Teniendo además que $\| x \|^2 = x\cdot x$.
+Teniendo además que $|| x ||^2 = x\cdot x$.
 
 Posteriormente, se introduce la desigualdad de Cauchy dada por:
 
-$$ | x\cdot y | \leq \| x \| \| y \| $$
+$$ | x\cdot y | \leq || x || || y || $$
 
 Y se lleva a cabo su demostración junto con algunas propiedades básicas de la norma Euclideana y sus demostraciones mediante dicha desigualdad.
 
