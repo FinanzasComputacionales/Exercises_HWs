@@ -28,8 +28,8 @@ Por lo que, juntando todo, hemos probado que:
 $$ \lim_{n\to\infty} f_n(x) = f(x), \quad \text{donde } f(x) =
 \begin{aligned}
     \left\\{
-        1 \quad& \text{si } x\leq 1 \\
-        x \quad& \text{si } x > 1
+        1 \quad & \text{si } x\leq 1 \\
+        x \quad & \text{si } x > 1
     \right.
 \end{aligned}
 $$
