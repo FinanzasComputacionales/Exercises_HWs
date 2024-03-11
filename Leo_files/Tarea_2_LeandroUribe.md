@@ -25,11 +25,11 @@ $$ \lim_{n\to\infty} x \sqrt[n]{ \frac{1}{x^n} + 1 } = x $$
 
 Por lo que, juntando todo, hemos probado que:
 
-$$ \lim_{n\to\infty} f_n(x) = f(x), \quad \text{donde } f(x) =
-\begin{aligned}
-    \left\\{
+$$ \lim_{n\to\infty} f_n(x) = f(x), \quad \text{donde } f(x) = 
+\left\\{
+    \begin{aligned}
         1 \quad & \text{si } x\leq 1 \\
         x \quad & \text{si } x > 1
-    \right.
-\end{aligned}
+    \end{aligned}
+\right.
 $$
