@@ -33,3 +33,16 @@ $$ \lim_{n\to\infty} f_n(x) = f(x), \quad \text{donde } f(x) =
     \end{aligned}
 \right.
 $$
+
+
+4. Para este ejercicio, debemos demostrar que la siguiente secuencia de funciones converge uniformemente a $f(x)=0$:
+
+$$ f_n(x) = \frac{ \sqrt{1-x^n} }{n^2}, \quad x\in[-1, 1] $$
+
+Analizando la secuencia de funciones para el intervalo dado, la expresión $\sqrt{1-x^n}$ evaluada en $x=-1$ dará como resultado $\sqrt{2}$ para valores impares de $n$, mientras que el resultado será 0 tanto para valores pares de $n$ en $x=-1$ como para el extremo $x=1$ sin importar la paridad de $n$.
+
+De lo anterior, podemos afirmar que $\sqrt{1-x^n} \leq \sqrt{2}$, por lo que se tendrá que:
+
+$$ f_n(x) = \frac{ \sqrt{1-x^n} }{n^2} \leq \frac{\sqrt{2}}{n^2} $$
+
+La desigualdad anterior no depende de $x \in [-1, 1]$, lo cual hace que al tomar el valor $\sup$ respecto a $x \in [-1, 1]$ garantice convergencia uniforme.
