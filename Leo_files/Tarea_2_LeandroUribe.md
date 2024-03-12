@@ -97,7 +97,7 @@ Para esto, determinemos el límite de $f_n(x)$ para $n\to\infty$:
 
 $$ \lim_{n\to\infty} \left( 1 + \frac{x^2}{n} \right)^{-n} = e^{-x^2} $$
 
-> [!IMPORTANT]
+> [!TIP]
 > Sabemos que este límite tiene la estructura de la identidad de Euler en límites que se aborda en cursos convencionales de cálculo diferencial, por lo que aquí se hizo uso de dicha identidad.
 
 Con esto, hemos encontrado que aquella función $f(x)$ a la que $f_n(x)$ converge puntualmente es $f(x)=e^{-x^2}$.
@@ -105,7 +105,7 @@ Con esto, hemos encontrado que aquella función $f(x)$ a la que $f_n(x)$ converg
 b). Para esto, se debe partir del Corolario 2.23.
 
 > [!IMPORTANT]
-> Este colorario establece que para una secuencia $f_n(x)$ de funciones no negativas, contínuas e integrables definidas en $\mathbb{R}$ que además convergen puntualmente a $f$ siendo esta además no negativa, contínua e integrable, suponiendo que sea de la forma $0 \leq f_n(x) \leq f_{n+1} \leq f(x)$ o $0 \leq f(x) \leq f_{n+1} \leq \leq f_n(x)$, para cualquier $x\in\mathbb{R}$ y cualquier $n\in\mathbb{N}$, entonces se cumple que:
+> Este colorario establece que para una secuencia $f_n(x)$ de funciones no negativas, contínuas e integrables definidas en $\mathbb{R}$ que además convergen puntualmente a $f$ siendo esta además no negativa, contínua e integrable, suponiendo que sea de la forma $0 \leq f_n(x) \leq f_{n+1} \leq f(x)$ o $0 \leq f(x) \leq f_{n+1} \leq f_n(x)$, para cualquier $x\in\mathbb{R}$ y cualquier $n\in\mathbb{N}$, se cumple que:
 >
 > $$ \lim_{n\to\infty} \int_{-\infty}^{\infty} f_n(x) \\; dx = \int_{-\infty}^{\infty} f(x) \\; dx $$
 
@@ -120,3 +120,6 @@ Para resolver esto, debemos tener en cuenta la función de **error**, pues prese
 >
 > $$ \text{erf}(x) = \frac{2}{\sqrt{\pi}} \int_0^x e^{-t^2} \\; dt $$
 
+Haciendo uso de esta función error y de acuerdo a desarrollos alrededor de dicha función, se puede llegar a determinar que:
+
+$$ \int_0^{\infty} e^{-x^2} \\; dx = \frac{ \sqrt{\pi} }{2} $$
