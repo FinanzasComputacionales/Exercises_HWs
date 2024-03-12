@@ -46,3 +46,42 @@ De lo anterior, podemos afirmar que $\sqrt{1-x^n} \leq \sqrt{2}$, por lo que se 
 $$ f_n(x) = \frac{ \sqrt{1-x^n} }{n^2} \leq \frac{\sqrt{2}}{n^2} $$
 
 La desigualdad anterior no depende de $x \in [-1, 1]$, lo cual hace que al tomar el valor $\sup$ respecto a $x \in [-1, 1]$ garantice convergencia uniforme.
+
+
+6. Se pide evaluar el siguiente límite:
+
+$$ \lim_{n\to\infty} \int_1^{\infty} \frac{ ne^{-nx} }{ 1+nx } dx $$
+
+El objetivo inicial será demostrar que existe convergencia uniforme para $f_n(x)$ para poder aplicar el teorema que permite introducir la expresión de un límite dentro de la integral, de modo que se tenga:
+
+$$ \lim_{n\to\infty} \int_a^b f_n(x) dx = \int_a^b \lim_{n\to\infty} f_n(x) dx $$
+
+Esto nos permitirá evaluar la expresión de una forma más sencilla.
+
+Para esto, comenzamos definiendo la siguiente función decreciente con $x\in [1, +\infty)$:
+
+$$ h_n(x) = \frac{n}{1+nx} $$
+
+Se tiene que al calcular $h'_n(x)$ obtenemos la siguiente expresión:
+
+$$ h'_n(x) = -\frac{ n^2 }{ (1+nx)^2 } < 0 $$
+
+Considerando el límite para la función $h_n(x)$ tenemos:
+
+$$ \lim_{x\to\infty} \frac{n}{1+nx} = 0 $$
+
+y, tomando el $\sup$ para el intervalo dado:
+
+$$ \sup_{x\in[1, \infty)} \frac{n}{1+nx} = h_n(1) = \frac{n}{1+n} $$
+
+Con esto, podemos inferir que el valor de $h_n(1)$ se encuentra restringido por:
+
+$$ |h_n(x)| \leq \frac{n}{1+n} < 1 $$
+
+y, por lo tanto, si tomamos en consideración el elemento $e^{-nx}$ podemos afirmar que:
+
+$$ \left| \frac{ne^{-nx}}{1+nx} \right| < e^{-nx} $$
+
+Mostrando así que existe convergencia uniforme para $f_n(x)$. Con esto, podemos hacer uso del teorema que introduce el límite dentro de la integral y evaluar:
+
+$$ \lim_{n\to\infty} \int_1^{\infty} \frac{ne^{-nx}}{1+nx} dx = \int_1^{\infty} \lim_{n\to\infty} \frac{ne^{-nx}}{1+nx} dx = \int_1^{\infty} 0 \\; dx = 0 $$
