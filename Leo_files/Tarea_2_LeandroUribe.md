@@ -85,3 +85,38 @@ $$ \left| \frac{ne^{-nx}}{1+nx} \right| < e^{-nx} $$
 Mostrando así que existe convergencia uniforme para $f_n(x)$. Con esto, podemos hacer uso del teorema que introduce el límite dentro de la integral y evaluar:
 
 $$ \lim_{n\to\infty} \int_1^{\infty} \frac{ne^{-nx}}{1+nx} dx = \int_1^{\infty} \lim_{n\to\infty} \frac{ne^{-nx}}{1+nx} dx = \int_1^{\infty} 0 \\; dx = 0 $$
+
+
+8. Se tiene la siguiente secuencia de funciones:
+
+$$ f_n(x) = \left( 1 + \frac{x^2}{n} \right)^{-n}, \quad x \geq 0 $$
+
+a). Veamos inicialmente que $f_n$ es convergente puntualmente a una función $f(x)$ a ser determinada.
+
+Para esto, determinemos el límite de $f_n(x)$ para $n\to\infty$:
+
+$$ \lim_{n\to\infty} \left( 1 + \frac{x^2}{n} \right)^{-n} = e^{-x^2} $$
+
+> [!IMPORTANT]
+> Sabemos que este límite tiene la estructura de la identidad de Euler en límites que se aborda en cursos convencionales de cálculo diferencial, por lo que aquí se hizo uso de dicha identidad.
+
+Con esto, hemos encontrado que aquella función $f(x)$ a la que $f_n(x)$ converge puntualmente es $f(x)=e^{-x^2}$.
+
+b). Para esto, se debe partir del Corolario 2.23.
+
+> [!IMPORTANT]
+> Este colorario establece que para una secuencia $f_n(x)$ de funciones no negativas, contínuas e integrables definidas en $\mathbb{R}$ que además convergen puntualmente a $f$ siendo esta además no negativa, contínua e integrable, suponiendo que sea de la forma $0 \leq f_n(x) \leq f_{n+1} \leq f(x)$ o $0 \leq f(x) \leq f_{n+1} \leq \leq f_n(x)$, para cualquier $x\in\mathbb{R}$ y cualquier $n\in\mathbb{N}$, entonces se cumple que:
+>
+> $$ \lim_{n\to\infty} \int_{-\infty}^{\infty} f_n(x) \\; dx = \int_{-\infty}^{\infty} f(x) \\; dx $$
+
+Puesto que en el desarrollo anterior se cumple que $f_n(x)$ converge puntualmente a una función $f(x)$, ya se cumple la condición para que el Corolario sea válido, por lo cuál, se puede afirmar que:
+
+$$ \lim_{n\to\infty} \int_{0}^{\infty} \left( 1 + \frac{x^2}{n} \right)^{-n} \\; dx = \int_{0}^{\infty} e^{-x^2} \\; dx $$
+
+Para resolver esto, debemos tener en cuenta la función de **error**, pues presenta la misma estructura y esto nos puede facilitar su solución.
+
+> [!TIP]
+> La función error está definida por:
+>
+> $$ \text{erf}(x) = \frac{2}{\sqrt{\pi}} \int_0^x e^{-t^2} \\; dt $$
+
