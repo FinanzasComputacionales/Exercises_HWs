@@ -23,7 +23,7 @@ Existen diversos tipos de derivados financieros, entre los más comunes se encue
 * **Swaps:** Permiten intercambiar flujos de efectivo futuros entre dos partes, como el pago de intereses o el tipo de cambio.
 
 
-> [!IMPORTANT] Su importancia
+> [!IMPORTANT]
 > Los derivados financieros desempeñan un papel fundamental en el sistema financiero moderno, pues estos permiten a los inversores protegerse contra el riesgo de movimientos adversos en los precios de los activos subyacentes, así como ofrecer la posibilidad de obtener ganancias apalancadas mediante la realización de apuestas sobre la dirección futura de los precios. Estas también facilitan la explotación de diferencias de precios entre diferentes mercados y contribuyen a la liquidez y eficiencia de los mercados financieros.
 
 Ilustración de tipos de derivados financieros:
@@ -36,7 +36,7 @@ Ilustración de tipos de derivados financieros:
 El marco de riesgo neutral es un enfoque fundamental para la valoración de derivados financieros, este se basa en la idea de que el precio de un derivado debe ser igual al valor actual de la cartera de replicación que reproduce su pago al vencimiento.
 
 
-> [!NOTE] Cartera de replicación
+> [!NOTE]
 > Una cartera de replicación es una combinación de activos subyacentes y otros instrumentos financieros que genera un flujo de efectivo equivalente al pago del derivado al vencimiento.
 
 
@@ -77,16 +77,17 @@ La fórmula de Black-Scholes es una de las herramientas más utilizadas para la 
 
 La derivación se basa en la idea de que el precio de una opción refleja el valor actual de la oportunidad de comprar o vender el activo subyacente a un precio determinado en el futuro.
 
-La expresión general de la ecuación de *Black-Scholes* está dada por:
+Considere una acción que no paga dividendos. Ahora construya cualquier derivado que tenga un tiempo de maduración fijo $T$ en el futuro, y en el momento de la maduración, tenga un pago $K(S_T)$ que dependa de los valores que tome la acción en ese momento (como las opciones de compra o venta europeas). Entonces el precio del derivado satisface la ecuación de *Black-Scholes* que está dada por:
 
 
 $$ \frac{\partial V}{\partial t} + \frac12\sigma^2 S^2 \frac{\partial^2 V}{\partial S^2} + rS\frac{\partial V}{\partial S} - rV = 0 $$
 
 
-
+En esta expresión, $V(t, S)$ es el precio de una opción, 
 
 
 **Referencias**
 
 * https://www.fool.com/terms/f/financial-derivatives/
 * https://en.wikipedia.org/wiki/Black%E2%80%93Scholes_equation
+
