@@ -19,7 +19,7 @@ Existen diversos tipos de derivados financieros, entre los más comunes se encue
 * **Swaps:** Permiten intercambiar flujos de efectivo futuros entre dos partes, como el pago de intereses o el tipo de cambio.
 
 
-> [!IMPORTANT]Importancia de derivados financieros
+> [!IMPORTANT]
 > Los derivados financieros desempeñan un papel fundamental en el sistema financiero moderno, pues estos permiten a los inversores protegerse contra el riesgo de movimientos adversos en los precios de los activos subyacentes, así como ofrecer la posibilidad de obtener ganancias apalancadas mediante la realización de apuestas sobre la dirección futura de los precios. Estas también facilitan la explotación de diferencias de precios entre diferentes mercados y contribuyen a la liquidez y eficiencia de los mercados financieros.
 
 Ilustración de tipos de derivados financieros:
@@ -32,7 +32,7 @@ Ilustración de tipos de derivados financieros:
 El marco de riesgo neutral es un enfoque fundamental para la valoración de derivados financieros, este se basa en la idea de que el precio de un derivado debe ser igual al valor actual de la cartera de replicación que reproduce su pago al vencimiento.
 
 
-> [!NOTE]Cartera de replicación
+> [!NOTE]
 > Una cartera de replicación es una combinación de activos subyacentes y otros instrumentos financieros que genera un flujo de efectivo equivalente al pago del derivado al vencimiento.
 
 
@@ -69,7 +69,7 @@ Esto supone algunas ventajas y desventajas, tales como:
 
 Inicialmente, se tiene que la expresión que forma la ecuación de Black-Scholes es una ecuación diferencial parcial (EDP) estocástica que rige la evolución del precio de los derivados según el modelo *Black-Scholes*.
 
-> [!TIP]Modelo Black-Scholes
+> [!TIP]
 > Este modelo estima el valor teórico de derivados financieros basado en otros instrumentos de inversión teniendo en cuenta el impacto del tiempo y otros factores de riesgo.
 
 La fórmula de Black-Scholes es una de las herramientas más utilizadas para la valoración de opciones financieras, y se tiene que esta fórmula se deriva a partir de la **ecuación de difusión de Ito**, que describe el movimiento aleatorio del precio de un activo subyacente a lo largo del tiempo.
