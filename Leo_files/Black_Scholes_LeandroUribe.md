@@ -6,10 +6,6 @@ En esta ocasión, se abordarán las siguientes temáticas:
 * Introducción a los derivados financieros y su importancia.
 * Explicación del marco de riesgo neutral y cómo se utiliza para valorar derivados.
 * Derivación de la fórmula de *Black-Scholes* y explicación de sus componentes.
-* Discusión de la paridad put-call y su importancia.
-* Explicación de cómo valorar opciones digitales.
-* Algunos ejemplos prácticos de cómo aplicar la fórmula de Black-Scholes.
-* Conclusiones, discusión de las limitaciones de la fórmula de Black-Scholes.
 
 
 ## **Derivados financieros, descripción e importancia**
@@ -23,7 +19,7 @@ Existen diversos tipos de derivados financieros, entre los más comunes se encue
 * **Swaps:** Permiten intercambiar flujos de efectivo futuros entre dos partes, como el pago de intereses o el tipo de cambio.
 
 
-> [!IMPORTANT]
+> [!IMPORTANT]Importancia de derivados financieros
 > Los derivados financieros desempeñan un papel fundamental en el sistema financiero moderno, pues estos permiten a los inversores protegerse contra el riesgo de movimientos adversos en los precios de los activos subyacentes, así como ofrecer la posibilidad de obtener ganancias apalancadas mediante la realización de apuestas sobre la dirección futura de los precios. Estas también facilitan la explotación de diferencias de precios entre diferentes mercados y contribuyen a la liquidez y eficiencia de los mercados financieros.
 
 Ilustración de tipos de derivados financieros:
@@ -36,7 +32,7 @@ Ilustración de tipos de derivados financieros:
 El marco de riesgo neutral es un enfoque fundamental para la valoración de derivados financieros, este se basa en la idea de que el precio de un derivado debe ser igual al valor actual de la cartera de replicación que reproduce su pago al vencimiento.
 
 
-> [!NOTE]
+> [!NOTE]Cartera de replicación
 > Una cartera de replicación es una combinación de activos subyacentes y otros instrumentos financieros que genera un flujo de efectivo equivalente al pago del derivado al vencimiento.
 
 
@@ -71,9 +67,20 @@ Esto supone algunas ventajas y desventajas, tales como:
 
 ## **Derivación de la fórmula de Black-Scholes**
 
-Inicialmente, se tiene que la expresión que forma la ecuación de Black-Scholes es una ecuación diferencial parcial (EDP) que rige la evolución del precio de los derivados según el modelo *Black-Scholes*. En términos generales, el término puede referirse a una EDP similar que puede derivarse para una variedad de opciones o, más en general, derivados.
+Inicialmente, se tiene que la expresión que forma la ecuación de Black-Scholes es una ecuación diferencial parcial (EDP) estocástica que rige la evolución del precio de los derivados según el modelo *Black-Scholes*.
 
-La fórmula de Black-Scholes es una de las herramientas más utilizadas para la valoración de opciones financieras, y se tiene que esta fórmula se deriva a partir de la ecuación de difusión de Ito, que describe el movimiento aleatorio del precio de un activo subyacente a lo largo del tiempo.
+> [!TIP]Modelo Black-Scholes
+> Este modelo estima el valor teórico de derivados financieros basado en otros instrumentos de inversión teniendo en cuenta el impacto del tiempo y otros factores de riesgo.
+
+La fórmula de Black-Scholes es una de las herramientas más utilizadas para la valoración de opciones financieras, y se tiene que esta fórmula se deriva a partir de la **ecuación de difusión de Ito**, que describe el movimiento aleatorio del precio de un activo subyacente a lo largo del tiempo.
+
+Algunas consideraciones importantes de este modelo:
+
+* El modelo Black-Scholes, también conocido como modelo Black-Scholes-Merton (BSM), es una ecuación diferencial muy utilizada para valorar contratos de opciones.
+* El modelo Black-Scholes requiere cinco variables de entrada: el precio de ejercicio de una opción, el precio actual de las acciones, el tiempo hasta el vencimiento, el tipo sin riesgo y la volatilidad.
+* Aunque suele ser preciso, el modelo Black-Scholes hace ciertas suposiciones que pueden llevar a predicciones que se desvían de los resultados del mundo real.
+* El modelo estándar BSM sólo se utiliza para valorar opciones europeas, ya que no tiene en cuenta que las opciones americanas podrían ejercerse antes de la fecha de vencimiento.
+
 
 La derivación se basa en la idea de que el precio de una opción refleja el valor actual de la oportunidad de comprar o vender el activo subyacente a un precio determinado en el futuro.
 
@@ -83,11 +90,16 @@ Considere una acción que no paga dividendos. Ahora construya cualquier derivado
 $$ \frac{\partial V}{\partial t} + \frac12\sigma^2 S^2 \frac{\partial^2 V}{\partial S^2} + rS\frac{\partial V}{\partial S} - rV = 0 $$
 
 
-En esta expresión, $V(t, S)$ es el precio de una opción, 
+En esta expresión, $V(t, S)$ es el precio de una opción como función de un precio de stock $S$ y un tiempo $t$, $r$ es la tasa de interés libre de riesgo y $\sigma$ es la volatilidad del stock.
+
+La idea financiera clave que subyace a la ecuación es que, bajo el supuesto modelo de un mercado **sin fricciones**, se puede cubrir perfectamente la opción comprando y vendiendo el activo subyacente de la forma correcta y, en consecuencia, "eliminar el riesgo". Esta cobertura, a su vez, implica que sólo hay un precio correcto para la opción, como devuelve la fórmula de Black-Scholes.
+
 
 
 **Referencias**
 
 * https://www.fool.com/terms/f/financial-derivatives/
 * https://en.wikipedia.org/wiki/Black%E2%80%93Scholes_equation
-
+* https://www.investopedia.com/terms/b/blackscholes.asp
+* https://www.youtube.com/watch?v=TnS8kI_KuJc
+* https://ocw.mit.edu/courses/18-s096-topics-in-mathematics-with-applications-in-finance-fall-2013/resources/mit18_s096f13_lecnote19/
